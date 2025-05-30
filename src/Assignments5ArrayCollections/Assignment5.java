@@ -11,9 +11,11 @@ public class Assignment5 {
 		
 		//Map<String, Map<String,Map<String,Map<String,Map<String,Map<String,Map<String,Map<String,Map<String,String>>>>>>>>> TableData = new HashMap<String, Map<String,Map<String,Map<String,Map<String,Map<String,Map<String,Map<String,Map<String,String>>>>>>>>>();
 		
-		Map<String, List<Map<String, String>>> tableData = new HashMap<>();
+		//Map<String, List<Map<String, String>>> tableData = new HashMap<>();
 		
-		List<Map<String,String>> StudentDetails = new ArrayList<>();
+		
+		
+		//'''''''''''''''''Student Data'''''''''''''''''''''
 		
 		Map<String, String> std1 = new HashMap<>();
 		std1.put("Name", "John Doe");
@@ -51,8 +53,12 @@ public class Assignment5 {
 		std3.put("PAN Number", "TYR6543212");
 		std3.put("Address", "789 Pine St");
 		
-		List<Map<String,String>> EmployeeDetails = new ArrayList<>();
+		List<Map<String,String>> StudentDetails = new ArrayList<>();
+		StudentDetails.add(std1);
+		StudentDetails.add(std2);
+		StudentDetails.add(std1);
 		
+		//********************Employee Data**************************
 		
 		Map<String, String> emp1 = new HashMap<>();
         emp1.put("Name", "Alice Green");
@@ -84,8 +90,14 @@ public class Assignment5 {
         emp3.put("Email", "carol@example.com");
         emp3.put("PAN Number", "TYR6543212");
 		
-        Map<String, Map<String, String>> ProductDetails = new HashMap<>();
-
+        List<Map<String,String>> EmployeeDetails = new ArrayList<>();
+        EmployeeDetails.add(emp1);
+        EmployeeDetails.add(emp2);
+        EmployeeDetails.add(emp3);
+        
+      //********************Product Data**************************
+        
+        
         Map<String, String> product1 = new HashMap<>();
         product1.put("Name", "Laptop");
         product1.put("Category", "Electronics");
@@ -119,7 +131,24 @@ public class Assignment5 {
         product3.put("Manufacturing Date", "Jan 2025");
         product3.put("Expiry Date", "Jan 2027");
 		
-		System.out.println(tableData);
+        List<Map<String,String>> ProductDetails = new ArrayList<>();
+        ProductDetails.add(product1);
+        ProductDetails.add(product2);
+        ProductDetails.add(product3);
+        
+     // --- Map of Student, Employee and Product Data ---
+     		Map<String, List<Map<String, String>>> data = new HashMap<>();
+     		data.put("Students", StudentDetails);
+     		data.put("Employees", EmployeeDetails);
+     		data.put("Products", ProductDetails);
+        
+        
+     // Print the supplier details
+    
+     		System.out.println(data.get("Products").get(0).get("Name"));
+    		
+    		
+		    //System.out.println(tableData);
 	}
 
 }
