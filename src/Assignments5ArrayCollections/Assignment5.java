@@ -145,7 +145,7 @@ public class Assignment5 {
         
      // Print the supplier details
     
-     		System.out.println(data.get("Products").get(0).get("Name"));
+     		System.out.println(data.get("Products").get(2).get("Rating"));
     		
     		
 		    //System.out.println(tableData);
