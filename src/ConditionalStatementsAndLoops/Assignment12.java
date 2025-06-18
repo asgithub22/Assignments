@@ -8,7 +8,7 @@ public class Assignment12 {
 		
 		//int[] prices = {7,6,4,3,1};
 		
-		int minPrice = prices[0];
+		int minPrice = prices[0]; //Initialize by first value of Array i.e 7
 		int maxProfit = 0;
 
 		for (int i = 1; i < prices.length; i++) {
