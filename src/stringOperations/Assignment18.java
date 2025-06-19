@@ -19,7 +19,6 @@ public class Assignment18 {
 			}
 		}
 
-		
 		System.out.println("Cleaned String: " + cleaned); // Print cleaned text
 		System.out.println("Is Palindrome? " + isPalindrome); //Print final result
 	}
